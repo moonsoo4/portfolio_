@@ -99,6 +99,10 @@ header nav ul a:hover::after{
     width: 100%;
 }
 
+/* header ul li > .subMenu li:hover{
+    display: block;
+} */
+
 .topVisual{
     position: relative;
     font-family: Montserrat, sans-serif;
@@ -122,13 +126,16 @@ header nav ul a:hover::after{
 .projectArea{}
 .projectArea .projectShortcut{
     display: flex;
-    padding-top: 472px;
-    gap: 20px;
+    padding-top: 485px;
+    gap: 40px;
 }
-.projectArea .projectShortcut li{}
-.projectArea .projectShortcut button{
-    font-weight: 800;
+.projectArea .projectShortcut li{
+    /* display: inline-block; */
+}
+.projectArea .projectShortcut li a{
     font-size: 30px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 800;
 }
 
 
@@ -295,6 +302,7 @@ header nav ul a:hover::after{
     font-size: 28px;
     font-family: 'Pretendard-Regular';
     font-weight: 600;
+    display: block;
 }
 .contentsIntro span{
     font-family: 'Montserrat', 'sans-serif';
@@ -316,6 +324,12 @@ header nav ul a:hover::after{
     font-weight: 700;
     transition: 0.3s linear;
 }
+.contentsIntro .seoul strong,
+.contentsIntro .con2 strong{
+    padding-top: 8px;
+}
+
+
 
 /* 공통 End*/
 
@@ -326,7 +340,6 @@ header nav ul a:hover::after{
     left: 138px;
     top: 160px;
     width: 150px;
-    height: 310px;
     text-align: center;
 }
 .contentsIntro .namu strong{}
@@ -347,20 +360,18 @@ header nav ul a:hover::after{
     font-weight: 700;
     transition: 0.3s linear;
 }
-.contentsIntro .namu .concept{padding-top: 8px;}
-.contentsIntro .namu .font{padding: 14px 0;}
-.contentsIntro .namu .mainPage{padding: 14px 0;}
+.contentsIntro .namu .concept{padding-top: 25px;}
+.contentsIntro .namu .font{padding: 24px 0;}
+.contentsIntro .namu .mainPage{padding: 24px 0;}
 /* NAMU TECH END*/
 
 
 /* SEOUL CITY HALL */
 .contentsIntro .seoul{
     position: absolute;
-    left: 628px;
-    top: 455px;
+    left: 615px;
+    top: 400px;
     width: 150px;
-    height: 310px;
-    /*background: orange;*/
     text-align: center;
 }
 .contentsIntro .seoul p{
@@ -372,19 +383,14 @@ header nav ul a:hover::after{
 }
 .contentsIntro .seoul .concept{}
 
-.contentsIntro .seoul .font{padding: 14px 0;}
-.contentsIntro .seoul .mainPage {padding: 14px 0;}
-.contentsIntro .seoul .subPage{margin-bottom: 10px;}
+.contentsIntro .seoul .font{padding: 24px 0;}
+.contentsIntro .seoul .mainPage {padding: 24px 0;}
+.contentsIntro .seoul .subPage{padding-bottom: 25px;}
 
 .contentsIntro .seoul .circle{}
 .contentsIntro .seoul .circle:hover{}
 
-.contentsIntro .seoul strong{
-    display: block;
-    font-size: 28px;
-    font-family: 'Pretendard-Regular';
-    font-weight: 600;
-}
+.contentsIntro .seoul strong{}
 .contentsIntro .seoul span{
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 600;
@@ -396,30 +402,25 @@ header nav ul a:hover::after{
 /* CON1 */
 .contentsIntro .con{
     position: absolute;
-    left: 1108px;
-    top: 170px;
+    left: 1095px;
+    top: 160px;
     width: 150px;
     height: 310px;
     /*background: dodgerblue;*/
     text-align: center;
 }
-.contentsIntro .con strong{}
-.contentsIntro .con span{}
-.contentsIntro .con .circle{}
-.contentsIntro .con .circle:hover{}
-.contentsIntro .con p{}
 
-.contentsIntro .con .concept{padding-top: 8px;}
-.contentsIntro .con .font{padding: 14px 0;}
-.contentsIntro .con .mainPage{padding: 14px 0;}
+.contentsIntro .con .concept{padding-top: 25px;}
+.contentsIntro .con .font{padding: 24px 0;}
+.contentsIntro .con .mainPage{padding: 24px 0;}
 
 /* CON1 end */
 
 /* con2 */
 .contentsIntro .con2{
     position: absolute;
-    left: 1640px;
-    top: 450px;
+    left: 1625px;
+    top: 396px;
     width: 150px;
     height: 310px;
     text-align: center;
@@ -433,19 +434,15 @@ header nav ul a:hover::after{
 }
 .contentsIntro .con2 .concept{}
 
-.contentsIntro .con2 .font{padding: 14px 0;}
-.contentsIntro .con2 .mainPage {padding: 14px 0;}
-.contentsIntro .con2 .subPage{margin-bottom: 10px;}
+.contentsIntro .con2 .font{padding: 24px 0;}
+.contentsIntro .con2 .mainPage {padding: 24px 0;}
+.contentsIntro .con2 .subPage{padding-bottom: 25px;}
 
 .contentsIntro .con2 .circle{}
 .contentsIntro .con2 .circle:hover{}
 
-.contentsIntro .con2 strong{
-    display: block;
-    font-size: 28px;
-    font-family: 'Pretendard-Regular';
-    font-weight: 600;
-}
+.contentsIntro .con2 strong{}
+
 .contentsIntro .con2 span{
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 600;
@@ -457,7 +454,7 @@ header nav ul a:hover::after{
 
 /* firstProject section */
 .firstProject{
-    height: 560px;
+    padding: 80px 0 90px 0;
     background: rgba(244, 244, 244, 0.7);
 }
 .projectWrap{
@@ -467,80 +464,119 @@ header nav ul a:hover::after{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
 }
 .projectWrap .titleArea{
     width: 420px;
     height: 100%;
+    font-family: 'Pretendard-Regular';
+}
+.projectWrap .titleArea .tag{
+    display: block;
+    font-size: 16px;
+}
+.projectWrap .titleArea em .IT{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3876F2;
+}
+.projectWrap .titleArea em .namu1{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3B5956;
 }
 .projectWrap .titleArea h2{
-    /* font-size: 34px; */
     font-size: 42px;
-    font-family: 'MinSans-Medium', sans-serif;
-    padding-top: 82px;
+    font-weight: 700;
+    padding-top: 8px;
 }
 .projectWrap .titleArea strong{
-    /* font-size: 22px;
-    font-size: 26px;
-    font-family: 'MinSans-Regular', sans-serif;
     display: block;
-    padding-top: 24px;
-    line-height: 1.2; */
+    padding-top: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.7);;
 }
 .projectWrap .titleArea .info{
-    padding: 24px 0;
+    padding: 29px 0 38px 0;
     box-sizing: border-box;
 }
 .projectWrap .titleArea .info em{
     /* font-size: 16px; */
     font-size: 18px;
-    font-family: 'MinSans-Regular';
+    font-weight: 500;
     display: block;
-    line-height: 1.7;
+    line-height: 1.6;
+}
+.projectWrap .titleArea .info em:nth-child(2){
+    margin: 9px 0;
 }
 .projectWrap .titleArea .info em.montFont{
     font-family: 'Montserrat', 'sans-serif';
-    font-weight: 500;
 }
-.projectWrap .titleArea .enterPage{}
+.projectWrap .titleArea .enterPage{
+    font-size: 0;
+}
+
 .projectWrap .titleArea .enterPage a{
-    padding: 15px;
     display: inline-block;
     font-size: 16px;
     font-family: 'Montserrat', 'sans-serif';
-    font-weight: 500;
-    margin-right: 10px;
+    font-weight: 600;
     background-color: #E5F9B7;
+    border: 1px solid #41633E;
     border-radius: 25px;
 }
-.projectWrap .titleArea .enterPage a:last-child{margin-right: 0;}
-.projectWrap .titleArea p{
-    padding-top: 24px;
-    font-size: 14px;
-    font-size: 16px;
-    font-family: 'MinSans-Regular';
-    line-height: 1.3;
+.projectWrap .titleArea .enterPage a:hover{
+    background-color: #caf763;
+    transition: 0.2s linear;
 }
 
+.projectWrap .titleArea .enterPage a:nth-child(1){
+    padding: 15px 13px;
+    margin-right: 26px;
+}
+.projectWrap .titleArea .enterPage a:last-child{
+    margin-right: 0;
+    padding: 15px 20px;
+}
+
+
 .projectWrap .imgArea{
-    width: 588px;
+    /* width: 588px; */
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    padding-top: 30px;
+    position: relative;
 }
-.projectWrap .imgArea div:nth-child(1) img{
-    height: 100%;
-    height: 460px;
-    /* background-color: green; */
-    /* border: 2px solid red; */
-    /* rotate: -20deg; */
+.projectWrap .imgArea .banner img{
+    width: 622px;
+    height: 319px;
+    border-radius: 30px;
 }
-.projectWrap .imgArea div:nth-child(2) img{
-    /* width: 195px; */
-    height: 450px;
-    rotate: 20deg;
+
+.projectWrap .imgArea .leftIntro{
+    position: absolute;
+    right: 115px;
+    bottom: -50px;
+    width: 119px;
+    height: 263px;
+}
+.projectWrap .imgArea .leftIntro img{
+    width: 119px;
+    height: 263px;
+}
+.projectWrap .imgArea .rightIntro{
+    position: absolute;
+    right: 11px;
+    bottom: -50px;
+    width: 119px;
+    height: 263px;
+    transform: rotateY(180deg);
+    rotate: 7deg;
+}
+.projectWrap .imgArea .rightIntro img{
+    width: 119px;
+    height: 263px;
 }
 .projectWrap .imgArea div img{
     width: 100%;
@@ -572,14 +608,15 @@ header nav ul a:hover::after{
 .firstProjectConcept .conceptArea em{
     font-size: 30px;
     font-family: 'Montserrat', 'sans-serif';
-    font-weight: 500;
+    font-weight: 600;
 }
 .firstProjectConcept .conceptArea strong{
     padding-top: 26px;
     box-sizing: border-box;
     display: block;
     /* text-align: center; */
-    font-family: 'MinSans-Regular';
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
     font-size: 28px;
 }
 .firstProjectConcept .conceptArea .concept1{
@@ -639,7 +676,7 @@ header nav ul a:hover::after{
     /* gap: 229px; */
 }
 .firstProjectFont .fontArea .namuFont strong{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     display: flex;
     align-items: center;
@@ -678,8 +715,9 @@ header nav ul a:hover::after{
 .firstProjectColor .color1 .nanum{
     margin-top: 108px;
     font-size: 24px;
-    font-family: 'MinSans-Regular';
-    line-height: 1.3;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    line-height: 1.6;
 }
 .firstProjectColor .color1 .colorWrap{
     width: 580px;
@@ -692,7 +730,7 @@ header nav ul a:hover::after{
     height: 122px;
 }
 .firstProjectColor .color1 .colorWrap strong{
-    font-family: 'MinSans-Regular';
+    font-family: 'Pretendard-Regular';
     font-size: 18px;
     display: block;
     text-align: center;
@@ -722,99 +760,122 @@ header nav ul a:hover::after{
 
 /* 첫번째 페이지 설명 */
 .firstProjectPage{
-    padding-top: 53px;
+    padding: 52px 0 82px 0;
 }
 .firstProjectPage .inner{
-    display: flex;
-    gap: 111px;
+    width: 1180px;
+    margin: 0 auto;
 }
+.firstProjectPage h4{}
 .firstProjectPage .main{
-    width: 705px;
-    position: relative;
+    display: flex;
+    gap: 280px;
+    font-family: 'Pretendard-Regular';
+}
 
-}
-.firstProjectPage .main .mainImg{
-    padding-top: 40px;
-}
-.firstProjectPage .main .mainImg img{
-    display: block;
-}
-.firstProjectPage .main .one{
+.firstProjectPage .main .mainImg{padding-top: 32px;}
+.firstProjectPage .main .mainImg img{display: block;}
+.firstProjectPage .main .descArea{padding-top: 32px;}
+
+/* 공통 */
+.firstProjectPage .main .descArea .one{
     width: 20px;
     height: 20px;
     vertical-align: top;
     border-radius: 50%;
-    background: #008BD0;
+    background: #8ED49D;
     display: inline-block;
     position: relative;
 }
-.firstProjectPage .main .one::before{
+.firstProjectPage .main .descArea .one::before{
     content: '';
-    width: 100px;
+    width: 75px;
     height: 2px;
-    background-color: #008BD0;
+    background-color: #8ED49D;
     display: block;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    z-index: -100;
 }
-.firstProjectPage .main .descTxt{
+/* 공통 END */
+
+.firstProjectPage .main .descArea .descTxt{
     display: inline-block;
 }
-.firstProjectPage .main strong{
-    font-size: 20px;
-    font-family: 'MinSans-Regular';
+.firstProjectPage .main .descArea strong{
+    font-size: 24px;
+    font-weight: 600;
 }
-.firstProjectPage .main p{
-    font-size: 16px;
-    font-family: 'MinSans-Light';
-    line-height: 1.2;
+.firstProjectPage .main .descArea p{
+    font-size: 18px;
+    line-height: 1.3;
     padding-top: 4px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
-.firstProjectPage .main .desc1{
-    position: absolute;
-    top: 190px;
-    right: 5px;
-    width: 232px;
-    height: 52px;
+.firstProjectPage .main .descArea .desc1{
+    display: flex;
+    justify-content: space-between;
 }
-.firstProjectPage .main .desc2{
-    position: absolute;
-    top: 410px;
-    right: 5px;
-    width: 232px;
-    height: 52px;
+.firstProjectPage .main .descArea .desc1 .descTxtArea{
+    padding-top: 100px;
 }
-.firstProjectPage .main .desc3{
-    position: absolute;
-    top: 770px;
-    right: 5px;
-    width: 232px;
-    height: 52px;
+.firstProjectPage .main .descArea .desc1 .one{
+    margin-right: 9px;
 }
-.firstProjectPage .main .desc4{
-    position: absolute;
-    top: 1280px;
-    right: 5px;
-    width: 232px;
-    height: 52px;
+.firstProjectPage .main .descArea .desc2{
+    margin: 124px 0;
+    display: flex;
+    gap: 18px;
+    /* justify-content: space-between; */
+    font-size: 0;
+}
+.firstProjectPage .main .descArea .desc2 .descTxtArea{
+    text-align: right;
+    padding-top: 70px;
+}
+.firstProjectPage .main .descArea .desc2 .one{
+    margin-left: 9px;
+}
+.firstProjectPage .main .descArea .desc2 .one::before{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.firstProjectPage .sub{
-    width: 916px;
-}
-.firstProjectPage .sub .subImg{
-    padding-top: 40px;
+.firstProjectPage .main .descArea .desc3{
     font-size: 0;
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
 }
-.firstProjectPage .sub .subImg img{
-    display: block;
-    height: 100%;
+.firstProjectPage .main .descArea .desc3 .descTxtArea{
+    padding-top: 60px;
 }
+.firstProjectPage .main .descArea .desc3 .one{
+    margin-right: 9px;
+}
+.firstProjectPage .main .descArea .desc4{
+    margin-top: 124px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+}
+.firstProjectPage .main .descArea .desc4 .descTxtArea{
+    text-align: right;
+    padding-top: 70px;
+}
+.firstProjectPage .main .descArea .desc4 .one{
+    margin-left: 9px;
+}
+.firstProjectPage .main .descArea .desc4 .one::before{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -100;
+}
+
 /* 첫번째 페이지 설명 End */
 
 
@@ -1231,20 +1292,20 @@ header nav ul a:hover::after{
 
 /* cursor */
 
-/* .followCursor {
+.followCursor {
     width: 30px;
     height: 30px;
     border-radius: 15px;
     background: #E0F6AD;
     position: fixed;
-    left: 50%;
+    left: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
     pointer-events: none;
     mix-blend-mode: difference;
     opacity: 0.7;
-} */
+}
 
 /* transition Section */
 

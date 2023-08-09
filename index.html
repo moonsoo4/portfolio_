@@ -11,17 +11,6 @@
 
 </head>
 <body>
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
-    <!-- 주석 -->
     <div class="followCursor"></div>
     <div class="lineBg">
         <img src="images/line.png" alt="">
@@ -31,25 +20,25 @@
     <div class="inner">
         <nav>
             <ul>
-                <li><a href="">About me</a></li>
-                <li><a href="">Design focus</a></li>
-                <li><a href="">Contents</a></li>
-                <li><a href="">Project</a></li>
+                <li><a href="#selfIntroPage">About me</a></li>
+                <li><a href="#important">Design focus</a></li>
+                <li><a href="#contentsIntro">Contents</a></li>
+                <li><a href="#firstProject">Project</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<div class="topVisual">
+<div class="topVisual" id="topVisual">
     <strong>Portfolio</strong>
     <em>Portfolio</em>
     <div class="projectArea">
         <div class="inner">
             <ul class="projectShortcut">
-                <li><button>Project1</button></li>
-                <li><button>Project2</button></li>
-                <li><button>Project3</button></li>
+                <li><a href="#firstProject">Project1 </a></li>
+                <li><a href="#secondProject">Project2</a></li>
+                <li><a href="#thirdProject">Project3</a></li>
             </ul>
         </div>
     </div>
@@ -58,7 +47,7 @@
 
 
 
-<section class="selfIntroPage">
+<section class="selfIntroPage" id="selfIntroPage">
     <div class="inner">
         <div class="introTxt">
             <strong>Lorem ipsum dolor sit <br>amet consectetur adipisicing elit.</strong>
@@ -102,7 +91,7 @@
     </div>
 </section>
 
-<section class="important">
+<section class="important" id="important">
     <div class="inner">
         <h3>Focus</h3>
         <ul>
@@ -123,7 +112,7 @@
 </section>
 
 
-<section class="contentsIntro">
+<section class="contentsIntro" id="contentsIntro">
     <div class="inner">
         <h4>Contents</h4>
     </div>
@@ -169,11 +158,12 @@
 
 </section>
 
-<section class="firstProject">
+<section class="firstProject" id="firstProject">
     <div class="projectWrap">
         <div class="titleArea">
+            <em class="tag"><span class="IT">IT</span>와 <span class="namu1">나무</span>의 만남을 기획 !</em>
             <h2>나무기술(주)</h2>
-            <strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, consectetur.</strong>
+            <strong>나무 뿌리의 넓게 펼쳐지는 속성을 데이터의 <br> 퍼짐으로 표현하며 공상과학적인 느낌을 주는 <br> 페이지로 리디자인 하게 되었습니다.</strong>
             <div class="info">
                 <em>작업시간 :  2023.04.17 ~ 2023.05.24</em>
                 <em>기여도 : 100%</em>
@@ -183,11 +173,11 @@
                 <a href="">Website</a>
                 <a href="">Figma</a>
             </div>
-            <p>나무 뿌리의 넓게 펼쳐지는 속성을 데이터의 퍼짐으로 표현하며 공상과학적인 느낌의 페이지로 리디자인 하게 되었습니다.</p>
         </div>
         <div class="imgArea">
-            <div><img src="images/intropage.png" alt=""></div>
-            <div><img src="images/iphone1.png" alt=""></div>
+            <div class="banner"><img src="images/namuBanner.png" alt=""></div>
+            <div class="leftIntro"><img src="images/intropage.png" alt=""></div>
+            <div class="rightIntro"><img src="images/sub2Phone.png" alt=""></div>
         </div>
     </div>
     
@@ -275,51 +265,57 @@
 <section class="firstProjectPage">
 
     <div class="inner">
-
+        <h4>Main page</h4>
         <div class="main">
-            <h4>Main page</h4>
             <div class="mainImg">
                 <img src="images/mainpage.png" alt="">
             </div>
-            <div class="desc1">
-                <div class="one"></div>
-                <div class="descTxt">
-                    <strong>메인 화면 배너</strong>
-                    <p>페이지 대표 소식을 전하는 배너</p>
+            <div class="descArea">
+                <div class="desc1">
+                    <div><img src="images/mainpage1.png" alt=""></div>
+                    <div class="descTxtArea">
+                        <div class="one"></div>
+                        <div class="descTxt">
+                            <strong>메인 화면 배너</strong>
+                            <p>페이지 대표 소식을 <br> 전하는 배너</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="desc2">
-                <div class="one"></div>
-                <div class="descTxt">
-                    <strong>주요기능</strong>
-                    <p>회사에서 다루는 주요 서비스를 <br>
-                        아이콘으로 간단하게 정리</p>
+                <div class="desc2">
+                    <div class="descTxtArea">
+                        <div class="descTxt">
+                            <strong>주요 기능</strong>
+                            <p>주요 서비스를 <br> 아이콘으로 간단하게 정리</p>
+                        </div>
+                        <div class="one"></div>
+                    </div>
+                    <div><img src="images/mainpage2.png" alt=""></div>
                 </div>
-            </div>
-            <div class="desc3">
-                <div class="one"></div>
-                <div class="descTxt">
-                    <strong>프로세스 나열</strong>
-                    <p>아이콘을 사용하여 회사 관리 <br>
-                        과정을 나열</p>
+                <div class="desc3">
+                    <div><img src="images/mainpage3.png" alt=""></div>
+                    <div class="descTxtArea">
+                        <div class="one"></div>
+                        <div class="descTxt">
+                            <strong>프로세스 나열</strong>
+                            <p>아이콘을 사용하여 <br>회사 관리 과정 나열</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="desc4">
-                <div class="one"></div>
-                <div class="descTxt">
-                    <strong>푸터</strong>
-                    <p>서브메뉴 연결 가능 네비 정리</p>
+                <div class="desc4">
+                    <div class="descTxtArea">
+                        <div class="descTxt">
+                            <strong>푸터</strong>
+                            <p>서브메뉴로 연결 가능한 <br> 네비 정리</p>
+                        </div>
+                        <div class="one"></div>
+                    </div>
+                    <div><img src="images/mainpage4.png" alt=""></div>
                 </div>
             </div>
         </div>
-        <div class="sub">
-            <h4>Sub page</h4>
-            <div class="subImg">
-                <img src="images/sub1.png" alt="">
-                <img src="images/sub2.png" alt="">
-                <img src="images/sub3.png" alt="">
-            </div>
 
+        <div class="sub">
+            
         </div>
 
     </div>
@@ -329,7 +325,7 @@
 
 <!-- Secondproject Seoulcityhall -->
 
-<section class="secondProject">
+<section class="secondProject" id="secondProject">
 
     <div class="projectWrap">
         <div class="titleArea">
@@ -348,8 +344,8 @@
             <p>점점 늘어가는 인터넷 사용량으로 인하여  유아와 초등학생들도 관공서 페이지에 관심을 가질 수 있겠다고 생각하여 서울시청 페이지를 조금 더 재미있고 화려한 페이지로 리디자인 하게 되었습니다.</p>
         </div>
         <div class="imgArea">
-            <div><img src="images/iphone1.png" alt=""></div>
-            <div><img src="images/iphone1.png" alt=""></div>
+            <!-- <div><img src="images/iphone1.png" alt=""></div> -->
+            <!-- <div><img src="images/iphone1.png" alt=""></div> -->
         </div>
     </div>
 
@@ -523,7 +519,7 @@
 
 
 <!-- thirdproject Seoulcityhall -->
-<section class="thirdProject">
+<section class="thirdProject" id="thirdProject">
     <div class="projectWrap">
         <div class="titleArea">
             <h2>Lorem ipsum.</h2>
@@ -540,8 +536,8 @@
             <p>나무 뿌리의 넓게 펼쳐지는 속성을 데이터의 퍼짐으로 표현하며 공상과학적인 느낌의 페이지로 리디자인 하게 되었습니다.</p>
         </div>
         <div class="imgArea">
-            <div><img src="images/intropage.png" alt=""></div>
-            <div><img src="images/iphone1.png" alt=""></div>
+            <!-- <div><img src="images/intropage.png" alt=""></div> -->
+            <!-- <div><img src="images/iphone1.png" alt=""></div> -->
         </div>
     </div>
     
@@ -625,7 +621,7 @@
     </div>
 </section>
 
-<section class="firstProjectPage">
+<!-- <section class="firstProjectPage">
 
     <div class="inner">
 
@@ -668,16 +664,16 @@
         <div class="sub">
             <h4>Sub page</h4>
             <div class="subImg">
-                <img src="images/sub1.png" alt="">
-                <img src="images/sub2.png" alt="">
-                <img src="images/sub3.png" alt="">
+                <!-- <img src="images/sub1.png" alt=""> -->
+                <!-- <img src="images/sub2.png" alt=""> -->
+                <!-- <img src="images/sub3.png" alt=""> -->
             </div>
 
         </div>
 
     </div>
 
-</section>
+</section> -->
 <!-- thirdproject Seoulcityhall End -->
 
 
