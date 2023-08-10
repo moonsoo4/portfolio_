@@ -1,0 +1,1274 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    box-sizing: border-box;
+    color: inherit;
+    list-style-type: none;
+
+}
+
+.wrap{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.inner{
+    margin: 0 160px;
+    width: 1120px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+.modal-popup-wrap{
+    border: 5px solid orange;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 400px;
+    /* z-index: 2; */
+    display: none;
+}
+
+.modal-popup-wrap img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.modal-footer{
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    padding: 5px 0;
+}
+
+.header-top-wrap{
+    color: #fff;
+    background-color: #2C87BE;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left ul{
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.header-top-right{
+    width: 194px;
+}
+
+.header-top-right ul{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    line-height: 44px;
+}
+
+.header-btm{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-logo-wrap{
+    /* width: 221px; */
+    height: 79px;
+    display: flex;
+}
+
+.page-logo-wrap h1{
+    box-sizing: border-box;
+    margin-left: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100px;
+    height: 79px;
+    line-height: 79px;
+}
+
+.page-logo img{
+    width: 74px;
+    height: 79px;
+}
+
+.page-menu{
+    display: flex;
+    /* width: 463px; */
+}
+
+
+/* hover 메뉴구성 */
+
+.page-menu .seoul-intro:hover{
+    border-bottom: 1px solid blue;
+    transition: all 1s;
+}
+
+.page-menu .seoul-intro:hover::after{
+    width: 84px;
+    height: 250px;
+    background: #fff;
+    border: 1px solid black;
+}
+
+/* hover 메뉴구성 */
+
+
+
+/* .page-menu>li{
+    width: 84px;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    position: relative;
+} */
+/* 
+.page-menu ul{
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    width: 100%;
+} */
+
+.page-menu ul{
+    display: flex;
+    /* width: 121px; */
+}
+
+.page-menu ul span:hover{
+    /* color: blue; */
+    border-bottom: 2px solid dodgerblue;
+    font-weight: 600;
+}
+
+/* .header-btm{
+    width: 1078px;
+} */
+
+.header-btm .page-logo{
+    /* width: 220px; */
+    /* height: 79px; */
+    /* line-height: 79px; */
+}
+
+.header-btm .page-menu>ul{
+    /* width: 463px; */
+    height: 79px;
+    line-height: 79px;
+    /* justify-content: space-between; */
+}
+
+.page-menu>ul>li{
+    width: 130px;
+    position: relative;
+}
+
+.page-menu>ul>li:hover ul{
+    display: block;
+}
+
+.page-menu ul ul{
+    position: absolute;
+    left: 0;
+    top: 79px;
+    border: 1px solid #2C87BE;
+    background: #fff;
+    display: none;
+}
+
+.header-btm .page-covid{
+    margin-top: 10px;
+    width: 228px;
+    height: 52px;
+    line-height: 52px;
+    background-color: #38924A;
+    border-radius: 15px;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+.page-covid strong{
+    color: #fff;
+}
+
+.quick-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 73px;
+}
+
+.quick-icon ul{
+    display: flex;
+    justify-content: space-between;
+    width: 227px;
+    padding-top: 5px;
+}
+
+.quick-icon ul li{
+    width: 54px;
+    height: 73px;
+}
+
+.quick-icon ul li p{
+    font-size: 11px;
+}
+
+.touch img{
+    width: 20px;
+    height: 32px;
+}
+
+.company img{
+    width: 28px;
+    height: 28px;
+}
+
+.calendar img{
+    width: 28px;
+    height: 29px;
+}
+
+.quick-weather{
+    /* width: 215px; */
+    margin-top: 16px;
+}
+
+.quick-weather ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+}
+
+.weather{
+    display: flex;
+    /* width: 86px; */
+    height: 46px;
+}
+
+.weather img{
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin-right: 8px;
+}
+
+.weather strong,
+.air strong{
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.weather p,
+.air p{
+    margin: 14px 0 0 4px;
+    font-size: 14px;
+}
+
+.air{
+    display: flex;
+    /* width: 86px; */
+    height: 46px;
+}
+
+.air img{
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin-right: 8px;
+}
+
+.quick-search{
+    width: 482px;
+    height: 40px;
+    
+    border-radius: 15px;
+    position: relative;
+    margin-top: 16px;
+}
+
+.quick-search input{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border: 3px solid #2c87be;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+.quick-search .search-ico{
+    background: url(img/search-ico.png)no-repeat center/ 100%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.quick-icon{
+    width: 227px;
+}
+
+.quick-menu-wrap{
+    background-color: #2C87BE;
+    color: #fff;
+}
+
+.main .quick-menu ul{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    line-height: 64px;
+}
+
+.main .quick-menu ul li{
+    width: 121px;
+}
+
+.main-news-wrap{
+    height: 573px;
+    padding: 40px 0;
+    box-sizing: border-box;
+    background: url(img/main-minwon.jpg)no-repeat center /cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.main-news-wrap::after{
+    content: '';
+    background: url(img/visual_2-1.png)no-repeat center;
+    position: absolute;
+    left: -70px;
+    bottom: -80px;
+    width: 356px;
+    height: 443px;
+    z-index: 10;
+}
+
+.main-news-wrap > .inner{
+    border-radius: 40px;
+    background-color: #fff;
+    opacity: 0.8;
+    z-index: 100;
+    position: relative;
+}
+
+
+.main-news-wrap .inner h1{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 0 32px 0;
+    box-sizing: border-box;
+}
+
+.inner .main-news{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    height: 399px;
+}
+
+.first-main-news,
+.second-main-news,
+.third-main-news{
+    width: 308px;
+    height: 399px;
+}
+
+.first-main-news img,
+.second-main-news img,
+.third-main-news img{
+    display: block;
+    width: 308px;
+    height: 308px;
+    border-radius: 40px;
+}
+
+.first-main-news-txt{
+    text-align: left;
+}
+
+.second-main-news img{
+    display: block;
+    width: 308px;
+    height: 308px;
+    border-radius: 40px;
+}
+
+.second-main-news-txt{
+    text-align: left;
+}
+
+.third-main-news img{
+    display: block;
+    width: 308px;
+    height: 308px;
+    border-radius: 40px;
+}
+
+.third-main-news-txt{
+    text-align: left;
+}
+
+.inner .main-service{
+    height: 302px;
+    margin-bottom: 30px;
+}
+
+.main-service h2{
+    padding: 37px 0 10px;
+    border-bottom: 1px solid #969696;
+}
+
+.main-service ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
+}
+
+.main-service ul li{
+    width: 140px;
+    height: 169px;
+}
+
+.main-service ul li{
+    padding-top: 30px;
+    border-radius: 40px;
+    background-color: #EAEAEA;
+}
+
+.main-service ul li p{
+    padding: 10px 0;
+}
+
+.report-service img{
+    width: 80px;
+    height: 80px;
+}
+
+.reserve-service img{
+    width: 85px;
+    height: 85px;
+}
+
+.work-service img{
+    width: 80px;
+    height: 80px;
+}
+
+.hand-seoul-service img{
+    width: 80px;
+    height: 85px;
+}
+
+.help-service img{
+    width: 80px;
+    height: 80px;
+}
+
+.hall-service img{
+    width: 75px;
+    height: 75px;
+}
+
+.seoul-notice h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.seoul-notice h3 span{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.notice-story{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    text-align: left;
+}
+
+.main-call-wrap{
+    position: relative;
+}
+
+.main-call-wrap::after{
+    position: absolute;
+    left: 0;
+    bottom: -260px;
+    width: 683px;
+    height: 690px;
+    content: '';
+    background: url(img/sing.jpg) no-repeat center /100%;
+    z-index: -10;
+}
+
+.main-call-wrap h4::after{
+    position: absolute;
+    left: -18px;
+    bottom: 150px;
+    width: 401px;
+    height: 686px;
+    rotate: -40deg;
+    content: '';
+    background: url(img/call.png) no-repeat center /100%;
+    z-index: 10;
+}
+
+.main-call-wrap .complaints-wrap::after{
+    content: '';
+    position: absolute;
+    z-index: -100;
+    right: 0;
+    top: -160px;
+    margin-bottom: 500px;
+    width: 354px;
+    height: 344px;
+    background: url(img/seoul_graphy.png) no-repeat center /100%;
+}
+
+h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.seoul-notice{
+    margin-bottom: 108px;
+}
+
+.seoul-notice-sub{
+    margin-bottom: 12px;
+}
+
+.seoul-notice-sub ul{
+    border-top: 1px solid #969696;
+    border-bottom: 1px solid #969696;
+    display: flex;
+    gap: 64px;
+    height: 59px;
+    line-height: 55px;
+    box-sizing: border-box;
+}
+
+.seoul-notice-sub button{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.seoul-notice-sub img{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.notice-small-intro{
+    width: 368px;
+    height: 251px;
+}
+
+.right-seoul-notice{
+    position: relative;
+}
+
+.notice-img-txt{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    bottom: 36px;
+    width: 100%;
+    padding: 2px 0;
+}
+
+.notice-small-intro img{
+    width: 368px;
+    height: 251px;
+}
+
+.small-intro-txt ul{
+    background-color: #89613D;
+    color: #fff;
+}
+
+.notice-small-pic ul{
+    display: flex;
+    height: 221px;
+    gap: 16px;
+}
+
+.notice-small-pic li{
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 1px solid #969696;
+    border-radius: 15px;
+    background-color: #fff;
+    z-index: 500;
+    opacity: 0.9;
+}
+
+.notice-small-pic p{
+    padding-top: 16px;
+    text-align: left;
+}
+
+.notice-small-pic strong{
+    display: block;
+    text-align: left;
+}
+
+.pic-1-img img,
+.pic-2-img img,
+.pic-3-img img{
+    width: 196px;
+    height: 99px;
+    border-radius: 15px;
+}
+
+.right-seoul-notice{
+    width: 368px;
+    height: 290px;
+}
+
+.small-intro-txt ul{
+    display: flex;
+    justify-content: space-between;
+    height: 39px;
+    line-height: 39px;
+}
+
+.complaints-wrap{
+    padding: 31px 8px;
+}
+
+.main-complaints{
+    display: flex;
+    height: 398px;
+}
+
+.left-complaints{
+    width: 418px;
+}
+
+.variety-complaints{
+    height: 202px;
+    padding: 40px 12px;
+    background: url(img/main-minwon.jpg) no-repeat center/ 100%;
+}
+
+.variety-complaints ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.variety-complaints li{
+    width: 191px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    border: 1px solid #969696;
+}
+
+.variety-complaints li:nth-child(2){
+    z-index: 100;
+}
+
+.left-down-complaints{
+    display: flex;
+    justify-content: space-between;
+    height: 188px;
+    width: 418px;
+    gap: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+.left-down-complaints ul{
+    display: flex;
+    width: 418px;
+    gap: 8px;
+}
+
+.left-down-left{
+    background-color: #D89A64;
+}
+
+.left-down-left{
+    padding-top: 60px;
+}
+
+.left-down-left em{
+    font-style: normal;
+}
+
+.left-down-left p{
+    font-size: 14px;
+}
+
+.left-down-left .up-p{
+    padding-top: 8px;
+}
+
+.left-down-right{
+    background-color: #38924A;
+    color: #fff;
+}
+
+.left-down-right p{
+    margin-top: 8px;
+}
+
+.left-down-right img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 26px 0 16px 80px;
+}
+
+.left-down-complaints ul>li{
+    height: 188px;
+    width: 205px;
+}
+
+.localTax-complaints{
+    width: 205px;
+}
+
+.mid-complaints{
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 223px;
+}
+
+.report-complaints{
+    height: 202px;
+    background-color: #BD1137;
+    color: #fff;
+    padding-top: 8px;
+}
+
+.report-complaints img{
+    width: 82px;
+    height: 60px;
+    display: block;
+    margin-left: 60px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.report-complaints p{
+    font-size: 14px;
+}
+
+.water-complaints,
+.office-complaints{
+    height: 90px;
+    color: #fff;
+    background-color: #008BD0;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.water-complaints strong{
+    font-size: 18px;
+}
+
+.water-complaints span{
+    color: #0010A5;
+    font-weight: bold;
+}
+
+.water-complaints p{
+    padding-top: 8px;
+}
+
+.office-complaints strong{
+    font-size: 18px;
+}
+
+.office-complaints p{
+    padding-top: 8px;
+}
+
+.join-complaints{
+    width: 223px;
+    padding: 71px 16px 0 16px;
+    background: url(img/join-pic.jpg)no-repeat center/ 223px 398px;
+}
+
+.join-complaints strong{
+    display: block;
+    width: 99px;
+    height: 41px;
+    line-height: 41px;
+    border: 1px solid #969696;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 45px;
+    background-color: #fff;
+}
+
+.join-complaints ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 21px;
+    gap: 16px;
+}
+
+.join-complaints ul li{
+    text-align: left;
+    padding-left: 16px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #969696;
+    background-color: #fff;
+}
+
+.right-complaints{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+    padding-left: 8px;
+}
+
+.call-complaints{
+    width: 216px;
+    height: 196px;
+    background-color: #FFAC0A;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.call-complaints strong{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.call-complaints img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    /* margin-left: 62px; */
+    margin: 8px 62px;
+}
+
+.reservation-complaints{
+    height: 196px;
+    width: 216px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #969696;
+}
+
+.reservation-complaints strong{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reservation-complaints p{
+    padding-top: 8px;
+}
+
+.event{
+    display: flex;
+    gap: 8px;
+}
+
+.event .environment-green{
+    color: #38924A;
+}
+
+.event .economy-blue{
+    color: #008BD0;
+}
+
+.event .welfare-red{
+    color: #BD1137;
+}
+
+.event .culture-blue{
+    color: #1E35B7;
+}
+
+.event img{
+    margin-top: 80px;
+    box-sizing: border-box;
+    width: 210px;
+    height: 190px;
+
+}
+.event .haetae {
+    position: relative;
+}
+.event .haetae::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    background: url(img/namsan.jpg) center no-repeat;
+    width: 500px;
+    height: 689px;
+    z-index: -1000;
+}
+
+.join-wrap{
+    background-color: #fff;
+    width: 450px;
+    height: 239px;
+    text-align: left;
+    border-radius: 40px;
+    border: 2px solid #969696;
+    padding: 30px;
+    margin-left: 8px;
+}
+
+.join-wrap h3{
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.join-wrap .event-plus{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background: url(img/plus-ico.png)no-repeat center /100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.festival-wrap h3{
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.festival-wrap .event-plus{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background: url(img/plus-ico.png)no-repeat center /100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.join-wrap ul{
+    padding-top: 10px;
+}
+
+.join-wrap ul li{
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.join-wrap ul li span{
+    padding-right: 24px;
+}
+
+.festival-wrap{
+    width: 450px;
+    height: 239px;
+    text-align: left;
+    border-radius: 40px;
+    border: 2px solid #969696;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.festival-wrap ul{
+    padding-top: 10px;
+}
+
+.festival-wrap ul li{
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.festival-wrap span{
+    padding-right: 24px;
+}
+
+.seoul-communication-wrap{
+    padding-top: 78px;
+}
+
+.communication-area{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 33px 36px;
+}
+
+.communication-area::after{
+    content: '';
+    width: 380px;
+    height: 620px;
+    position: absolute;
+    bottom: 34px;
+    left: 0;
+    background: url(img/walkway.jpg)no-repeat center 70%;
+    z-index: -100;
+}
+
+.communication-area strong{
+    font-size: 14px;
+}
+
+.communication-area>div{
+    width: 335px;
+    height: 255px;
+}
+
+.communication-area img{
+    width: 200px;
+    height: 190px;
+}
+
+.communication-area > div {
+    background-color: #fff;
+}
+
+.communication-area-img1{
+    padding: 20px;
+    border-radius: 30px;
+    text-align: left;
+    border: 1px solid #969696;
+}
+
+.communication-area-img1 .img-box-1{
+    width: 293px;
+    height: 188px;
+    margin-bottom: 8px;
+}
+
+.communication-area-img2{
+    padding: 20px;
+    border-radius: 30px;
+    text-align: left;
+    border: 1px solid #969696;
+}
+
+.communication-area-img2 .img-box-2{
+    width: 293px;
+    height: 188px;
+    margin-bottom: 8px;
+}
+
+.communication-area-img3{
+    padding: 20px;
+    border-radius: 30px;
+    text-align: left;
+    border: 1px solid #969696;
+}
+
+.communication-area-img3 .img-box-3{
+    width: 293px;
+    height: 188px;
+    margin-bottom: 8px;
+}
+
+.communication-area-img4{
+    padding: 20px;
+    border-radius: 30px;
+    text-align: left;
+    border: 1px solid #969696;
+}
+
+.communication-area-img4 .img-box-4{
+    width: 293px;
+    height: 188px;
+    margin-bottom: 8px;
+}
+
+.communication-area-img5{
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: left;
+    border: 1px solid #969696;
+}
+
+.communication-area-img5::after{
+    content: '';
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+    z-index: -100;
+    width: 393px;
+    height: 418px;
+    background: url(img/palace.png) no-repeat center /90%;
+}
+
+.communication-area-img5 .img-box-5{
+    width: 293px;
+    height: 188px;
+    margin-bottom: 8px;
+}
+
+.communication-area-img6{
+    padding: 20px;
+    border-radius: 30px;
+    text-align: left;
+    border: 1px solid #969696;
+    position: relative;
+}
+
+.communication-area-img6::after{
+    position: absolute;
+    content: '';
+    z-index: -100;
+    right: 0;
+    bottom: 0;
+    width: 344px;
+    height: 517px;
+    background: url(img/Seoul.jpg)no-repeat center ;
+}
+
+.communication-area-img6 .img-box-6{
+    width: 293px;
+    height: 188px;
+    margin-bottom: 8px;
+}
+
+.footer-menu{
+    background-color: #E9E9E9;
+}
+
+.footer-menu button{
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+.footer-menu button::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    /* line-height: 20px; */
+    background: url(img/chevron-up-solid.svg) no-repeat bottom/ 45%;
+}
+
+.footer-menu .inner{
+    height: 56px;
+    line-height: 56px;
+}
+
+.footer-menu ul{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 112px; */
+    font-size: 14px;
+}
+
+.footer-menu ul li{
+    width: 20%
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+.footer-top ul{
+    display: flex;
+    gap: 30px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.copyright-wrap{
+    /* width: 786px; */
+}
+
+.footer-top .copyright-wrap li{
+    /* width: 90px; */
+}
+
+.sns-wrap img{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.left-footer-btm-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-btm{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.footer-btm .call{
+    /* width: 174px; */
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer-btm .call img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.footer-btm .call strong,
+.footer-btm .call span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-btm .call p{
+    text-align: left;
+}
+
+.footer-btm .call .info-find{
+    padding-top: 9px;
+}
+
+.footer-btm .copyright{
+    padding: 16px 0;
+}
+
+.footer-btm .copyright p{
+    font-size: 12px;
+    text-align: left;
+}
+
+.footer-btm .web-access{
+    width: 230px;
+}
+
+.web-access img{
+    padding: 10px;
+}
